@@ -23,17 +23,19 @@ OBJECTS = one_c.o lst_index.o ls_countlist.o ls_isbignum.o ls_isdupnum.o ls_isnu
 all : $(NAME)
 
 $(NAME) :
+	make re -C libft
 	$(C) $(CFLAGS) -c $(SOURCES)
 	ar rc $(NAME) $(OBJECTS)
 	ranlib $(NAME)
 	$(C) $(CFLAGS) push_swap.c $(NAME) libft/libft.a -o push_swap
 	$(C) $(CFLAGS) checker.c $(NAME) libft/libft.a -o checker
-	rm -f $(NAME)
 
 clean :
+	make fclean -C libft
 	/bin/rm -f $(OBJECTS)
 
 fclean :
-	/bin/rm -f $(OBJECTS) $(NAME)
+	clean
+	/bin/rm -f $(NAME)
 
 re : fclean all
