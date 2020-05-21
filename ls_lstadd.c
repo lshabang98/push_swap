@@ -14,9 +14,6 @@
 
 void		ls_lstadd(t_lst **alst, t_lst **new)
 {
-	t_lst	*head;
-
-	head = *alst;
 	if (alst != NULL || new != NULL)
 	{
 		(*new)->next = *alst;

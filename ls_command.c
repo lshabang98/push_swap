@@ -20,9 +20,7 @@ void	command_s(t_lst **stack_a)
 void	command(t_lst **stack_a, t_lst **stack_b)
 {
 	t_lst	*tmp;
-	int		size;
 
-	size = ls_countlist(*stack_a);
 	while (ls_countlist(*stack_a) > 3)
 	{
 		tmp = *stack_a;

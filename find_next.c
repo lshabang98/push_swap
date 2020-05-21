@@ -1,6 +1,6 @@
 #include "push_swap.h"
 
-void		next_to_top(t_lst **stack, t_lst *temp, int i){
+void		next_to_top(t_lst **stack, t_lst *temp){
 	t_lst	*temp2;
 
 	temp2 = *stack;
@@ -40,7 +40,7 @@ void		find_next(t_lst **stack)
 		{
 			if (temp->in_pair == 'n' && next_big(temp, top))
 			{
-				next_to_top(stack, temp, i);
+				next_to_top(stack, temp);
 				break ;
 			}
 			temp = temp->next;
