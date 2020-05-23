@@ -20,6 +20,8 @@ void		ls_rev_rot(t_lst **stack){
 	tail = NULL;
 	if (*stack == NULL)
 		return ;
+	if ((*stack)->next == NULL)
+		return ;
 	while (head->next != NULL)
 		head = head->next;
 	tail = head->prev;

@@ -38,13 +38,6 @@ void		return_nums_a(t_lst **stack_a, t_lst **stack_b, int last){
 void		return_nums(t_lst **stack_a, t_lst **stack_b, int last)
 {
 	rrot(stack_a);
-	if ((*stack_a)->pos < last)
-	{
-		rot(stack_a);
-		find_last_first(stack_a, stack_b, last);
-		last--;
-	}
-	else
-		last--;
+	last--;
     return_nums_a(stack_a, stack_b, last);
 }

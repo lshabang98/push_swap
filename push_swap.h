@@ -60,5 +60,7 @@ void				return_nums(t_lst **stack_a, t_lst **stack_b, int last);
 void				find_last_first(t_lst **stack_a, t_lst **stack_b, int last);
 void				command(t_lst **stack_a, t_lst **stack_b);
 int					next_big(t_lst *big, t_lst *head);
+void				split_to_b(t_lst **stack_a, t_lst **stack_b);
+void				index_reset(t_lst *stack);
 
 #endif

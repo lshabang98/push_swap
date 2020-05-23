@@ -16,9 +16,9 @@ C = gcc
 
 CFLAGS = -Wall -Werror -Wextra
 
-SOURCES = one_c.c lst_index.c ls_countlist.c ls_isbignum.c ls_isdupnum.c ls_isnum.c ls_isnum1.c ls_issmallnum.c ls_lstadd.c ls_lstnew.c ls_push.c ls_swap.c ls_rotate.c ls_rev_rot.c ls_short_way.c ls_sort_three.c ls_stack.c ls_tosplit.c ls_verify.c ls_print.c sort_top.c atoi_long.c is_int.c taketotop.c swap.c return_nums.c next_big.c lst_index2.c ls_rrot.c ls_rot.c ls_command.c find_next.c find_last_first.c
+SOURCES = one_c.c lst_index.c ls_countlist.c ls_isbignum.c ls_isdupnum.c ls_isnum.c ls_isnum1.c ls_issmallnum.c ls_lstadd.c ls_lstnew.c ls_push.c ls_swap.c ls_rotate.c ls_rev_rot.c ls_short_way.c ls_sort_three.c ls_stack.c ls_tosplit.c ls_verify.c ls_print.c sort_top.c atoi_long.c is_int.c taketotop.c swap.c return_nums.c next_big.c lst_index2.c ls_rrot.c ls_rot.c ls_command.c find_next.c find_last_first.c split_to_b.c index_reset.c
 
-OBJECTS = one_c.o lst_index.o ls_countlist.o ls_isbignum.o ls_isdupnum.o ls_isnum.o ls_isnum1.o ls_issmallnum.o ls_lstadd.o ls_lstnew.o ls_push.o ls_swap.o ls_rotate.o ls_rev_rot.o ls_short_way.o ls_sort_three.o ls_stack.o ls_tosplit.o ls_verify.o ls_print.o sort_top.o atoi_long.o is_int.o taketotop.o swap.o return_nums.o next_big.o lst_index2.o ls_rrot.o ls_rot.o ls_command.o find_next.o find_last_first.o
+OBJECTS = one_c.o lst_index.o ls_countlist.o ls_isbignum.o ls_isdupnum.o ls_isnum.o ls_isnum1.o ls_issmallnum.o ls_lstadd.o ls_lstnew.o ls_push.o ls_swap.o ls_rotate.o ls_rev_rot.o ls_short_way.o ls_sort_three.o ls_stack.o ls_tosplit.o ls_verify.o ls_print.o sort_top.o atoi_long.o is_int.o taketotop.o swap.o return_nums.o next_big.o lst_index2.o ls_rrot.o ls_rot.o ls_command.o find_next.o find_last_first.o split_to_b.o index_reset.o
 
 all: $(NAME)
 

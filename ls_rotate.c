@@ -21,6 +21,8 @@ void		ls_rotate(t_lst **stack)
 	tail = *stack;
 	if (*stack == NULL)
 		return ;
+	if ((*stack)->next == NULL)
+		return ;
 	while (tail->next != NULL)
 		tail = tail->next;
 	(*stack) = (*stack)->next;

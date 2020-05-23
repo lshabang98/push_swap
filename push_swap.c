@@ -15,23 +15,16 @@
 void		launch(t_lst *stack_a, t_lst *stack_b)
 {
 	int		len;
-	int		half;
 
 	len = ls_countlist(stack_a);
 	lst_index(stack_a);
-	if (len > 99)
-	{
-		half = len * 0.20;
-		while (ls_countlist(stack_a) > half)
-		{
-			ls_push(&stack_b, &stack_a);
-			ft_putendl("pb");
-		}
+	if (len > 20){
+		split_to_b(&stack_a, &stack_b);
+		index_reset(stack_a);
 		lst_index2(stack_a);
 		taketotop(&stack_a);
 		find_next(&stack_a);
 		return_nums(&stack_a, &stack_b, len);
-		ls_print(stack_a);
 	}
 	else
 		command(&stack_a, &stack_b);

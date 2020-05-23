@@ -10,18 +10,12 @@ void		next_to_top(t_lst **stack, t_lst *temp){
             swap(stack);
 		rrot(stack);
 	}
-	(*stack)->c = 'a';
 	(*stack)->in_pair = 'y';
 	temp2 = *stack;
 	while(temp2->next->in_pair != 'y')
 	{
 		swap(stack);
 		rot(stack);
-	}
-	if ((*stack)->pos == ((*stack)->next->pos - 1))
-	{
-		(*stack)->next->c = 'x';
-		(*stack)->c = 'e';
 	}
 }
 

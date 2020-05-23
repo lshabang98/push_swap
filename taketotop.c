@@ -19,7 +19,6 @@ void			taketotop(t_lst **stack)
 			else
 				while((*stack)->content != temp->content)
 					rrot(stack);
-			(*stack)->c = 'a';
 			(*stack)->in_pair = 'y';
 			return ;
 		}
